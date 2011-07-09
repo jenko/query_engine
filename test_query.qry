@@ -1,0 +1,14 @@
+let inst_var = f.sp
+show
+  Op: 100 * (inst_var.open 1 value later - inst_var) / inst_var
+  ROD: 100 * (inst_var - inst_var.open) / inst_var.open
+  1d: % move from 0 values ago to 1 value later of inst_var
+  2d: % move from 0 values ago to 2 value later of inst_var
+  3d: % move from 0 values ago to 3 value later of inst_var
+  4d: % move from 0 values ago to 4 value later of inst_var
+  5d: % move from 0 values ago to 5 value later of inst_var
+when
+  % move from 1 value ago to 0 values ago of inst_var > 3
+and
+   date is after 12/3/2005
+

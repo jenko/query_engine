@@ -1,0 +1,5 @@
+grammar DoubleQuote
+  rule double_quote
+    '"'
+  end
+end
